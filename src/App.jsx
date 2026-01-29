@@ -10,7 +10,7 @@ function App() {
   const [error, setError] = useState("");
   const [city, setCity] = useState("");
 
-  const API_KEY = import.meta.env.VITE_API_KEY;
+  const API_KEY = import.meta.env.VITE_API_KEY || "18ead9a1b58ce8cef34920c1910665d8";
   const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
   const fetchWeather = async (searchCity) => {
@@ -116,7 +116,7 @@ function App() {
 
                 <div className="flex flex-col items-center mb-8">
                   <img
-                    src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}
+                    src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}
                     alt={weather.weather[0].description}
                     className="w-32 h-32 -my-4 animate-bounce-slow"
                   />
@@ -158,7 +158,7 @@ function App() {
                       {new Date(day.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' })}
                     </p>
                     <img
-                      src={`http://openweathermap.org/img/wn/${day.weather[0].icon}.png`}
+                      src={`https://openweathermap.org/img/wn/${day.weather[0].icon}.png`}
                       alt={day.weather[0].description}
                       className="w-12 h-12 mb-2 group-hover:scale-110 transition-transform"
                     />
