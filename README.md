@@ -45,3 +45,8 @@ A modern, responsive weather application built with React and Vite. This applica
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+
+
+<img width="1919" height="917" alt="image" src="https://github.com/user-attachments/assets/a99e7355-2e90-4f40-aa58-0306fd33d44c" />
+
